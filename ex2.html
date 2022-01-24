@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="button" value="hi" onclick="alert(1+1)">
+    <input type="text" onchange="alert('changed')">
+    <input type="text" onkeydown="alert('key down!')">
+
+
+    <!-- 버튼을 만드는 태그. <input type="button", value 는 버튼 안의 값.
+
+    onclick 의 속성은 반드시 자바스크립트가 와야합니다.
+    페이지는 그 속성을 기억했다가 onclik이 발생하면 실행합니다.
+    이렇게 웹브라우저 위에 일어나는 일들을 event라고 합니다.
+    event ex)onclick onchange onkeydown
+
+
+  -->
+  </body>
+    <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    ">
+    <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    ">
+
+    <p>
+  "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  </p>
+</html>

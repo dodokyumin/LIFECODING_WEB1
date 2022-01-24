@@ -4,41 +4,49 @@
   <title>WEB-HTML</title>
   <meta charset="utf-8">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WLS3XD645X"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLS3XD645X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-WLS3XD645X');
-</script>
+    gtag('config', 'G-WLS3XD645X');
+  </script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1><a href="index.html">WEB</a></h2>
+  <h1><a href="index.html">WEB</a></h1>
+  <input type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
+  <div id="grid">
   <ol>
-    <li><a href="1.html">html</a></li>
-    <li><a href="2.html">css</a></li>
-    <li><a href="3.html">javascript</a></li>
-    <li>부모태그ol은 자동 번호매김 ordered list</li>
+      <li><a href="1.html">html</a></li>
+      <li><a href="2.html">css</a></li>
+      <li><a href="3.html">javascript</a></li>
   </ol>
+    <!--
   <ul>
     <li>부모태그ul은 앞동그라미 만들기 unordered list</li>
     <li>드래그 앤 탭하여 자식태그로 만들기</li>
   </ul>
-  <h2>HTML</h2>
-  <p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/jSJM9iOiQ1g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </p>
-  이 수업에서 채택한 에디터는
-  <strong><u>github</u>.com</strong>에서 만든
-  Atom(아톰)입니다.<br>
-  <a href="https://www.google.com/search?q=anchor&source=lmns&bih=723&biw=838&hl=ko&sa=X&ved=2ahUKEwi-uIT59cH0AhVK6JQKHf7GBqAQ_AUoAHoECAEQAA" target="_blank">a는 anchor의 뜻으로 이 링크가 어디에 앵커를 걸어야 할지 말해주는 태그이다. h는 html의 첫글자, ref는 reference 언급의 앞글자들.</a> target="_blank"는 새 탭으로 링크를 열게 해주는 태그이다.
-  <br>
-  <p>body를 설명하는 태그는 head태그로 묶는다.</p>
-  <p>character set = charset utf-8 이라는 형식으로 캐릭터를 셋해서 읽어라.</p>
-  <p> p(aragraph)로 문단 나누기</p>
-  <p style="margin-top:45px;">사진샘플<img src="coding.jpg" width="100%"></p>
-  <p>
+    -->
+  <div id="article">
+    <h2>HTML</h2>
+    <p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/jSJM9iOiQ1g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+    이 수업에서 채택한 에디터는
+    <strong><u>github</u>.com</strong>에서 만든
+    Atom(아톰)입니다.<br>
+    <a href="https://www.google.com/search?q=anchor&source=lmns&bih=723&biw=838&hl=ko&sa=X&ved=2ahUKEwi-uIT59cH0AhVK6JQKHf7GBqAQ_AUoAHoECAEQAA" target="_blank">a는 anchor의 뜻으로 이 링크가 어디에 앵커를 걸어야 할지 말해주는 태그이다. h는 html의 첫글자, ref는 reference 언급의 앞글자들.</a> target="_blank"는 새 탭으로 링크를 열게 해주는 태그이다.
+    <br>
+    <p>body를 설명하는 태그는 head태그로 묶는다.</p>
+    <p>character set = charset utf-8 이라는 형식으로 캐릭터를 셋해서 읽어라.</p>
+    <p> p(aragraph)로 문단 나누기</p>
+    <p style="margin-top:45px;">사진샘플<img src="coding.jpg" width="50%"></p>
+   </div>
+  </div>
     <div id="disqus_thread"></div>
 <script>
     /**
@@ -56,23 +64,22 @@
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
     })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </p>
-  <p>
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/61a8955353b398095a671a84/1flt8eki9';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-  </p>
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </p>
+    <p>
+      <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/61a8955353b398095a671a84/1flt8eki9';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
 </body>
 </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Object</h1>
+    <!-- 객체 = 이름이 있는 정리정돈 상자 -->
+    <h2>Create</h2>
+    <script>//객체를 만들 때 사용하는 기호= 오브젝트 리터럴= 중괄호 / 배열은 대괄호
+      var coworkers = {
+        "programmer":"egoing",
+        "designer":"leezche"
+      };//coworkers라는 객체에 egoing이라는 정보를 programmer라는 딱지를 붙여서 저장한 셈.
+      document.write("programer : "+coworkers.programmer+"<br>");
+      document.write("designer : "+coworkers.designer+"<br>");
+      //coworkers.programmer 의 .은 오브젝트 엑세스 오퍼레이터라고 부름. coworkers라는 객체에 엑세스(접근하는) 오퍼레이터.
+
+      coworkers.bookkeeper = "duru";
+      document.write("bookkeeper : "+coworkers.bookkeeper+"<br>");
+      //이미 객체가 만들어진 상태에서 객체를 추가하려면.
+
+      coworkers["data scientist"] = "taeho";
+      document.write("data scientist : " +coworkers["data scientist"]+"<br>");
+      //객체의 이름에 띄어쓰기가 존재한다면, .빼고 ["이름"]
+    </script>
+
+    <h2>Iteration</h2>
+    <script>//객체의 데이터를 순회하는 법
+      for(var key in coworkers){
+        document.write(key + ' : ' +coworkers[key]+"<br>");
+      }
+      //coworkers라는 객체에 있는(in) 데이터의 수 만큼 중괄호에 있는 코드들이 실행된다. 실행 될 때마다 coworkers에 있는 key값들 하나하나 변숫값으로 설정해준다는 것.
+    </script>
+
+    <h2>Property & Method</h2>
+    <script>//객체에는 뭐든 담을 수 있음. 함수까지도
+      coworkers.showAll = function(){
+        for(var key in this){
+          document.write(key + ' : ' +this[key]+"<br>");
+        }
+      }
+      //showAll 이라는 함수 안에서, 이 함수가 소속되어 있는 객체를 가리키는 약속된 기호 : this
+      //변수 이름 coworkers가 바뀌어도 this는 자기자신을 가리키기 때문에 영향을 받지 않는다.
+      coworkers.showAll();
+      //showAll이라는 함수를 적용 했을 때, showAll자신 마저도 coworkers객체의 데이터기 때문에 같이 보여진다.->for문 안에 if문으로 showAll을 제거한다 설정.
+    </script>
+    <p>객체에 소속된 함수(ex.showAll)는 <mark>메소드(method)</mark>라 부르며,
+    객체에 소속된 변수(ex.programmer,designer,bookkeeper)들은 <mark>프로퍼티(property)</mark>라고 부른다.</p>
+  </body>
+</html>

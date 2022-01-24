@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Conditional Statements</h1>
+    <h2>Program</h2>
+    <script>
+      document.write("1<br>");
+      document.write("2<br>");
+      document.write("3<br>");
+      document.write("4<br>");
+    </script>
+
+    <h2>IF-true</h2>
+    <script>
+      document.write("1<br>");
+      if(true){
+      document.write("2<br>");
+      } else {
+      document.write("3<br>");
+      }
+      document.write("4<br>");
+    </script>
+
+    <h2>IF-false</h2>
+    <script>
+      document.write("1<br>");
+      if(false){
+      document.write("2<br>");
+      } else {
+      document.write("3<br>");
+      }
+      document.write("4<br>");
+      </script>
+
+
+        <!-- 조건문의 true면, 첫번째 중괄호의 코드들이 실행되고 두번째는 무시.
+        false는 첫번째 중괄호의 코드가 무시되고, else(그렇지 않다면)안에 는 코드가 실행 -->
+
+
+      <h2>Else if</h2>
+    <script>
+      var 깐풍기= false;
+      var 팔보채= true;
+      var 탕수육= true;
+
+      if(깐풍기){
+       document.write("좋아, 깐풍기를 주문하겠어!");
+     } else if (팔보채) {
+       document.write("팔보채를 주문해야지")
+     } else if (탕수육) {
+       document.write("탕수육은 먹을 수 있겠구나")
+     } else {
+       document.write("음, 그럼 볶음밥이나 먹어야겠다.")
+     }
+
+     //if & else if 각 해당 조건이 true일 때 실행할 코드가 있습니다.
+     //else 는 모든 조건이 false일 때 실행할 코드이다.
+
+    </script>
+
+   <h2>Who are you?</h2>
+    <script>
+      var 홍규민= true;
+      if (홍규민 === '홍규민') {
+        document.write("나잖아!");
+      } else {
+        document.write("누구세요?");
+      }
+    </script>
+
+    <script>
+      document.write(12-1);
+      document.write("4<br>");
+    </script>
+
+
+<div class="">
+
+</div>
+
+    <input id="my_name" type="text" placeholder="what's your name?" onchange="
+      if (document.querySelector('#my_name').value === '홍규민'){        document.write("나잖아!");
+            } else {
+              document.write("누구세요?");
+            }
+      ">
+<h2>당신은 누구십니까</h2>
+<button onclick="test()">입력창(prompt) 발생</button>
+
+<script>
+    function test() {
+        var test = prompt("(질문 내용)");
+
+        alert("답변 내용 : " + test);
+    }
+
+</script>
+  </body>
+</html>

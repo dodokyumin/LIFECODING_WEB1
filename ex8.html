@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Loop & Array</h1>
+      <script>
+        var coworkers = ['kyumin','antonio','kyusub','luca','ara'];
+      </script>
+    <h2>Co workers</h2>
+    <ul>
+      <script>
+        var i = 0;
+        while (i < coworkers.length) {
+          document.write('<li><a href="http://a.com/'+coworkers[i]+'">'+coworkers[i]+'</a></li>');
+          i = i + 1; // i++; 로도 표현 가능
+        }
+        document.write('우리 가족');
+      </script>
+      <!-- 표현하고자 하는<li> </li>안의 갯수는 변수 coworkers의 index(eliments) 갯수와 같으므로,
+      '+coworkers[i]+'
+      coworkers변수에
+      배열에서 어떤 데이터를 가져올 땐 : []
+      []안에는 가져오고싶은 데이터의 index 값.= 변수 i의 값과 일치.
+
+      while( i < coworkers.length )
+      => i < coworkers의 원소 갯수.
+
+      리스트에 링크를 개별적으로 추가한다면,
+      <a href="http://a.com/'+coworkers[i]+'"> </a> 를 통해 개별적으로 자동적으로 추가.
+      ex) http://a.com/antonio
+      -->
+    </ul>
+
+    <script>
+      var 레식쟁이들 = ["두두펄스","카푸","유씨레이터","차오쩡요"]
+      for( var i = 0; i < 레식쟁이들.length; i++ ){
+        document.write("레식하자 " + 레식쟁이들[i] +"야!"+ "<br>");
+      }
+      document.write("코뼈 뿌러질때까지 ㄱㄱ")
+    </script>
+  </body>
+</html>

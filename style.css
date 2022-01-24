@@ -1,0 +1,56 @@
+body{
+  margin:0;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size:45px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin:0;
+  padding:20px;
+  }
+ol{
+   border-right:1px solid gray;
+   width:100px;
+   margin:0;
+   padding:20px;
+ }
+#grid{
+  display:grid;
+  grid-template-columns: 150px 1fr
+}
+#grid ol{
+  padding-left: 33px;
+}
+#grid #article{
+  padding-left:25px;
+}
+@media(max-width:700px){
+  #grid{
+    display: block;
+  }
+  ol{
+     border-right:none;
+  }
+  h1 {
+    border-bottom:none;
+  }
+
+    /*
+    html형식에 css를 넣을테니 <style>태그 안의 ex)a{  }(선택자,selector) 안의 {선언,declaration}는 css로 읽어라. color(속성,property):red(값,value);
+      또는, 각 html태그에 직접 style="~" 부여하여 사용. 총 2가지 방법.
+
+      마무리는 세미콜론으로 구분.
+
+      text-decoration: 텍스트의 효과(하이퍼링크 밑줄 등)는 ~다.
+
+      html태그 class="이름"로 임의의 클래스를 묶고, css태그 .이름 으로 일괄적 속성부여한다.
+
+      class값은 여러개의 속성이 들어올 수 있고, 띄어쓰기로 구분한다.
+      id값은 페이지에 단 한개만 존재한다.
+      (가장 최근의 명령이 더 큰 영향력을 가진다.)
+
+       id 셀렉터 > class 셀렉터 > tag 셀렉터
+       */

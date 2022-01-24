@@ -3,35 +3,70 @@
 <head>
   <title>WEB-CSS</title>
   <meta charset="utf-8">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WLS3XD645X"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <link rel="stylesheet" href="style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLS3XD645X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-WLS3XD645X');
-</script>
+    gtag('config', 'G-WLS3XD645X');
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 구글 제이쿼리 CDN -->
+
+    <script src="colors.js"></script>
+    <!-- colors.js로 스크립트 내용을 별개 파일로 저장. 가독성이 좋아지고, 코드 의미가 파일이름으로 확인하고, 소스를 넣은 모오든 파일들의 유지보수가 편리해지고. f12검사창에 network 확인
+    자바스크립트 코드⊂ 함수로 정돈하기 ⊂ 객체로 정돈하기 ⊂ 파일로 쪼개서 정돈하기
+  -->
 </head>
 <body>
-  <h1><a href="index.html">WEB</a></h2>
-  <ol>
-    <li><a href="1.html">html</a></li>
-    <li><a href="2.html">css</a></li>
-    <li><a href="3.html">javascript</a></li>
-    <li>부모태그ol은 자동 번호매김 ordered list</li>
-  </ol>
-  <ul>
-    <li>부모태그ul은 앞동그라미 만들기 unordered list</li>
-    <li>드래그 앤 탭하여 자식태그로 만들기</li>
-  </ul>
-  <h2>CSS</h2>
-  <p>
-    종속형 시트 또는 캐스케이딩 스타일 시트(Cascading Style Sheets, CSS)는 마크업 언어가 실제 표시되는 방법을 기술하는 스타일 언어(style sheet language)로[1], HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다. W3C의 표준이며, 레이아웃과 스타일을 정의할 때의 자유도가 높다.
-    기본 파일명[2]은 style.css이다.
-    마크업 언어(ex: HTML)가 웹사이트의 몸체를 담당한다면 CSS는 옷과 액세서리처럼 꾸미는 역할을 담당한다고 할 수 있다. 즉, HTML 구조는 그대로 두고 CSS 파일만 변경해도 전혀 다른 웹사이트처럼 꾸밀 수 있다.
-    현재 개발 중인 CSS3의 경우 그림자 효과, 그라데이션, 변형 등 그래픽 편집 프로그램으로 제작한 이미지를 대체할 수 있는 기능이 추가되었다. 또한 다양한 애니메이션 기능이 추가되어 어도비 플래시를 어느 정도 대체하고 있다.
-  </p>
+  <h1><a href="index.html">WEB</a></h1>
+
+  <input type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
+
+
+  <div id="grid">
+      <ol>
+          <li><a href="1.html">html</a></li>
+          <li><a href="2.html">css</a></li>
+          <li><a href="3.html">javascript</a></li>
+      </ol>
+        <!--
+            <li>부모태그ol은 자동 번호매김 ordered list</li>
+        <ul>
+          <li>부모태그ul은 앞동그라미 만들기 unordered list</li>
+          <li>드래그 앤 탭하여 자식태그로 만들기</li>
+        </ul>
+        -->
+        <!--
+        <h1><a href="index.html"><font color="red">WEB</fomt</a></h2>
+        <ol>
+          <li><a href="1.html"><font color="red">html</fomt</a></li>
+          <li><a href="2.html"><font color="red">css</fomt</a></li>
+          <li><a href="3.html"><font color="red">javascript</fomt</a></li>
+          <li>부모태그ol은 자동 번호매김 ordered list</li>
+        </ol>
+        <ul>
+          <li>부모태그ul은 앞동그라미 만들기 unordered list</li>
+          <li>드래그 앤 탭하여 자식태그로 만들기</li>
+        </ul>
+      -->
+    <div id="article">
+      <h2>CSS</h2>
+      <p>
+        종속형 시트 또는 캐스케이딩 스타일 시트(Cascading Style Sheets, CSS)는 마크업 언어가 실제 표시되는 방법을 기술하는 스타일 언어(style sheet language)로[1], HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다. W3C의 표준이며, 레이아웃과 스타일을 정의할 때의 자유도가 높다.
+        기본 파일명[2]은 style.css이다.
+        마크업 언어(ex: HTML)가 웹사이트의 몸체를 담당한다면 CSS는 옷과 액세서리처럼 꾸미는 역할을 담당한다고 할 수 있다. 즉, HTML 구조는 그대로 두고 CSS 파일만 변경해도 전혀 다른 웹사이트처럼 꾸밀 수 있다.
+        현재 개발 중인 CSS3의 경우 그림자 효과, 그라데이션, 변형 등 그래픽 편집 프로그램으로 제작한 이미지를 대체할 수 있는 기능이 추가되었다. 또한 다양한 애니메이션 기능이 추가되어 어도비 플래시를 어느 정도 대체하고 있다.
+      </p>
+    </div>
+  </div>
+
   <p>
     <div id="disqus_thread"></div>
 <script>
@@ -44,29 +79,31 @@
     this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://web1-2is605gxzc.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
+  <div>
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://web1-2is605gxzc.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </p>
+      <p>
+        <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/61a8955353b398095a671a84/1flt8eki9';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
     })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </p>
-  <p>
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/61a8955353b398095a671a84/1flt8eki9';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-  </p>
+    </script>
+    <!--End of Tawk.to Script-->
+      </p>
+</div>
 </body>
 </html>

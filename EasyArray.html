@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+    var 공룡 = ["티라노사우루스","벨로키랍토르","스테고사우루스","트리케라톱스","브라키오사우루스","프테라노돈","아파토사우루스","티플로도쿠스","콤프소그나투스"];
+    </script>
+
+    <script>
+      document.write(공룡[0]);
+      공룡[0] = "티라노사우루스 렉스";//원소 바꾸기
+      document.write(공룡[0]);
+    </script>
+    <br>
+    <script>
+        //공룡[33] = "티라노사우루스 렉스"; 10~32번까지 undifined로 설정됨.
+
+        var 공룡과숫자 = ["공룡", 1, ["트리케라톱스",3-1, 2020122911], 10];
+        document.write(공룡과숫자[2]);
+
+        document.write(공룡과숫자[2][2]);//괄호 안 괄호
+    </script>
+    <br>
+    <script>
+      공룡.length;//length(프로퍼티)
+      document.write(공룡[공룡.length-1]);//마지막 eliment 가져오기
+    </script>
+
+    <br>
+    <script>
+      var 동물 = [];
+      동물.push("고양이"); //push 배열 끝에 원소 추가.
+      동물.unshift("고양이"); //unshift 배열의 시작 부분에 원소 추가.
+    </script>
+
+    <br>
+    <script>
+      var 강아지 = ["푸들","골든리트리버","섀퍼드","닥스훈트","말티즈"];
+      강아지.pop(); //pop은 해당 배열의 마지막 원소를 제거, 또는 반환.
+      동물.shift(); //shift는 해당 배열의 첫 번째 원소를 제거, 또는 반환.
+    </script>
+
+    <br>
+    <script>
+      var 공룡강아지 = 공룡.concat(강아지); //공룡 배열 뒤에 강아지 배열이 이어추가. (기존 두 개 배열은 변함 없음.)
+      var 모든동물 = 공룡.concat(동물,강아지); //두가지 이상 배열의 결합.
+    </script>
+
+    <br>
+    <script>
+      var 색상 = ["빨강","초록","파랑"];
+      색상.indexOf("파랑"); // indexOf( )는 배열 원소 색인,위치를 찾는 매서드.
+      //배열안 중복된 원소의 색인을 검색하면, 맨 앞의 원소의 위치 반환.
+    </script>
+
+    <br>
+    <script>
+      var 착한동물 = ["원숭이","고양이","물고기","도마뱀"];
+      document.write(착한동물.join());
+      // .join() 매서드는 모든 원소를 하나의 큰 문자열로 만들어줌.
+      document.write(착한동물.join("-"));
+      //원소 사이에 사이에 -를 추가하여 반환.
+    </script>
+
+      <br>
+    <script>
+      var 색상 = ["빨강","초록","파랑"];
+      색상.indexOf("파랑"); // indexOf( )는 배열 원소 색인,위치를 찾는 매서드.
+      //배열안 중복된 원소의 색인을 검색하면, 맨 앞의 원소의 위치 반환.
+    </script>
+
+    <br>
+    <script>
+      Math.random(); //0초과 1미만의 무작위 숫자 반환.
+      Math.random()*10; //십의 자리 숫자까지 반환.
+      Math.floor(3.201229);// 소수점 떼고 3까지만 반환.
+      Math.random()*4; //0~4사이의 무작위 유리수 반환.
+
+      Math.floor(Math.random()*4); //0부터 4사이의 무작위 자연수.
+      var 무작위단어 = ["보온병","동굴","공주"]
+      무작위단어[Math.floor(Math.random()*무작위단어.length)];
+    </script>
+
+    <br>
+    <script>
+      var 색상목록 = ["새하얀","푸르른","검붉은","희미한"];
+      var 자연목록 = ["코끼리","달빛","버드나무","강바다"];
+      var 단어목록 = ["외침","눈웃음","소리","일격","영혼"];
+
+      var 색상 = 색상목록[Math.floor(Math.random()*색상목록.length)]
+      var 자연 = 자연목록[Math.floor(Math.random()*자연목록.length)]
+      var 단어 = 단어목록[Math.floor(Math.random()*단어목록.length)]
+
+      var 나의인디언이름 = [색상, 자연, "의", 단어 + "!!"].join(" ");
+      나의인디언이름;
+    </script>
+    <br>
+    <script>
+      var 인디언이름작성 = function (){
+        var 색상목록 = ["새하얀","푸르른","검붉은","희미한"];
+        var 자연목록 = ["코끼리","달빛","버드나무","강바다"];
+        var 단어목록 = ["외침","눈웃음","소리","일격","영혼"];
+
+        //무작위로 고른 문자열을 한 문장으로 조합합니다.
+        var 인디언이름 = 무작위단어선택(색상목록) + " " + 무작위단어선택(자연목 록) + "의" + 무작위단어선택(단어목록) + "!!";
+
+        return 인디언이름;
+      };
+      var 무작위단어선택 = function (단어목록){
+          return 단어목록[Math.floor(Math.random()*단어목록.length)]
+      }//미래의 규민아 부탁한다
+
+    </script>
+  </body>
+</html>

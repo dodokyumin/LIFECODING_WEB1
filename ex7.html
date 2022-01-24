@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Loop</h1>
+    <ul>
+    <script>
+      document.write('<li>1</li>');
+      var i = 0;
+      while (i < 3) {
+        document.write('<li>2</li>');
+        document.write('<li>3</li>');
+        i = i + 1;
+      }
+        document.write('<li>4</li>');
+    </script>
+    <!-- while()의 값이 false가 될 때까지 { }를 반복.
+        이때 정해주는 변수 i(관습적)
+        i = i + 1; => 구문이 반복 될 때마다 i의 값을 1씩 증가시키는 방법.
+        기존의 i의 값에 1을 더한 결과(i + 1)를 i의 새로운 값(i=)으로 준다.
+        따라서, 0<3: 1회,
+                0+1<3 :2회
+                1+1<3 :3회
+                2+1<3 :4회 => while() 값이 false가 되며 반복문이 끝나고 이후 코드가 재생됨.
+        -->
+    </ul>
+  </body>
+</html>

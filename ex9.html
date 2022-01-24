@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Function</h1>
+    <h2>Basic</h2>
+    <ul>
+      <script>
+        function two(){
+          document.write('<li>2-1</li>');
+          document.write('<li>2-2</li>');
+        }
+        document.write('<li>1</li>');
+        two();
+        document.write('<li>3</li>');
+        two();
+        //규칙적인 반복이면 반복문 사용이 가능하지만, 불규칙할 경우 함수를 사용.
+      </script>
+    </ul>
+    <h2>Parameter & Argument</h2>
+    <h2>Return</h2>
+      <script>
+        function onePlusOne(){
+          document.write(1+1+"<br>");
+        }
+        onePlusOne();
+
+        function sum(left, right){
+          document.write(left + right + "<br>");
+          }
+        sum(2,3); //5
+        sum(3,4); //7
+      </script>
+    <h2>Return</h2>
+      <script>
+        function sum2(left, right){
+          return left + right;
+        }//태권아! sum2 계산해줘 하기만 해~ 응.
+        //태권아! sum2 계산해서 return해줘! 5야~
+        document.write(sum2(2,3)+'<br>');
+        document.write('<div style="color:red">' + sum2(2,3) + '</div>');
+        document.write('<div style="font-size:3rem;">' + sum2(2,3) +'</div>');
+
+      //계산이라고 하는 기능만을 sum2라는 함수가 구현함으로써, 원자화(어디에다도 다 붙일 수있는)된 기능을, 다양한 맥락에서 사용할 수 있는 자유도가 생긴다. 이것이 바로 return이 주는 효과.
+      </script>
+      <h2>For반복문과 함수를 이용하여 고양이 얼굴 그리기</h2>
+      <script>
+        function 고양이그리기(반복횟수) {
+        for( var i = 0; i < 반복횟수; i++){
+          document.write(i + " =^.^=" +"<br>");
+        }
+      }
+      고양이그리기(9);
+      //function안에 이미 document.write()가 포함 돼있으므로, 고양이그리기(9); 힘수 코드는 홀로 document에 write를 실행할 수 있움.
+      </script>
+
+      <br>
+      <script>
+        var i = 0;
+        function 강아지그리기(반복횟수){
+        while (i < 반복횟수) {
+          document.write(i + " -^o^-" +"<br>");
+          i++;
+          }
+        }
+      document.write(강아지그리기(5));
+      </script>
+      <br>
+      <script>
+        var 여러번그리기 = function(반복횟수, 그릴내용){
+          for(var i=0; i<반복횟수; i++){
+            document.write(i + " " + 그릴내용 + "<br>")
+          }
+        };
+        document.write(여러번그리기(3, "^^7"));
+      </script>
+
+  </body>
+</html>

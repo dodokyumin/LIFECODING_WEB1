@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #grid{
+        border:5px solid pink;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        /*
+          columns : 열
+          rows : 행
+          1fr 1fr = 화면 전체를 1대 1 비율로 나눔.
+           2fr 1fr = 2대 1
+           150px 1fr = 150px 고정, 가변 1비율 */
+      }
+      div{
+        border:5px solid gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="grid">
+      <div>NAVIGATION</div>
+      <div>ARTICLE</div>
+       <!--아무런 목적 없이 단지 디자인의 목적으로 무색무취와 같은 태그 <div>. 이 태그는 기본적으로 block level element이기 때문에 자동 줄바꿈.
+        <span>은 inline element이다.-->
+    </div>
+
+  </body>
+</html>
